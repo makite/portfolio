@@ -1,0 +1,53 @@
+.n_wrapper {
+  display: flex;
+  height: 10vh;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  top: 0;
+}
+.n_left {
+  display: flex;
+  flex: 1;
+  gap: 2rem;
+  align-items: center;
+}
+.n_name {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.n_right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+  font-weight: 400;
+}
+.n_list {
+  flex: 10;
+}
+.n_list > ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  margin-right: 4rem;
+  cursor: pointer;
+}
+.n_list li:hover {
+  color: var(--orange) !important;
+  cursor: pointer !important;
+}
+.n_button {
+  flex: 2;
+}
+.mobile_nav {
+  display: block;
+}
+
+.desktop_nav {
+  display: none;
+}
+@media screen and (max-width: 480px) {
+  .n_list {
+    display: none;
+  }
+}

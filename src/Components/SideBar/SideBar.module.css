@@ -1,0 +1,27 @@
+.sidebar {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 280px;
+  background: var(--black);
+  color: white;
+  transform: translateX(-100%);
+  transition: all 0.4s;
+  z-index: 9999;
+}
+.sidebar li {
+  list-style: none;
+  padding: 1rem 2rem;
+  border-bottom: solid rgba(255, 255, 255, 0.1) 1px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sidebar li:hover {
+  color: var(--yellow);
+}
+.sidebar_open {
+  transform: translateX(0%);
+}

@@ -1,0 +1,22 @@
+.floating_div {
+  display: flex;
+  justify-content: space-around;
+  box-shadow: var(--boxShadow);
+  background: white;
+  border-radius: 17px;
+  align-items: center;
+  padding: 0px;
+  height: 4.5rem;
+}
+.floating_div img {
+  transform: scale(0);
+}
+.floating_div > span {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+@media screen and (max-width: 480px) {
+  .floating_div {
+    top: 70%;
+  }
+}

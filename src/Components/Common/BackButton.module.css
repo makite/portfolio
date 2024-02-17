@@ -1,0 +1,25 @@
+.back {
+  border-radius: 1rem;
+  padding: 2px;
+  cursor: pointer;
+  height: 20px;
+  width: 2rem;
+  color: var(--blue);
+  cursor: pointer;
+  margin-left: 100%;
+  transform: scale(2);
+  position: fixed;
+  bottom: 25px;
+  right: -25px;
+  z-index: 9999;
+}
+.back > * {
+  height: 1rem;
+  width: 1rem;
+  color: var(--blue);
+}
+@media screen and (max-width: 480px) {
+  .back {
+    margin-left: 100%;
+  }
+}
