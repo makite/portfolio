@@ -13,11 +13,25 @@
     "framer-motion": "^10.12.14",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
+    "react-loaders": "^3.0.1",
     "react-router": "^6.20.1",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.8.9",
+    "react-toastify": "^10.0.5",
+    "sass": "^1.74.1",
     "swiper": "^9.3.2",
-    "web-vitals": "^2.1.4"
+    "TagCloud": "^2.5.0",
+    "web-vitals": "^2.1.4",
+    "animate.css": "^4.1.1",
+    "leaflet": "^1.7.1",
+    "loaders.css": "^0.1.2",
+    "magicmouse.js": "^1.2.1",
+    "react-router-dom": "^6.2.2",
+    "react-tsparticles": "^2.0.6",
+    "styled-components": "^5.3.5",
+    "tsparticles": "^2.0.6"
+    
   },
   "scripts": {
     "start": "react-scripts start",
@@ -42,5 +56,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "css-loader": "^7.0.0",
+    "postcss-loader": "^8.1.1",
+    "resolve-url-loader": "^5.0.0",
+    "sass-loader": "^14.1.1"
   }
 }

@@ -46,6 +46,7 @@
 .desktop_nav {
   display: none;
 }
+
 @media screen and (max-width: 480px) {
   .n_list {
     display: none;

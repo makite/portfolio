@@ -7,10 +7,9 @@ const SideBar = (props) => {
   };
   const sidebarItem = [
     { DisplayItem: "Home", LinkTo: "NavBar" },
-    { DisplayItem: "Services", LinkTo: "Services" },
+    { DisplayItem: "Skills", LinkTo: "Skills" },
     { DisplayItem: "Experience", LinkTo: "Experience" },
     { DisplayItem: "Portfolio", LinkTo: "Portfolio" },
-    { DisplayItem: "Testimonial", LinkTo: "Testimonial" },
   ];
   return (
     <div

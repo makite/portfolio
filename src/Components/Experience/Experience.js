@@ -6,6 +6,8 @@ const Experience = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
+    <div className="main-app">
+
     <div
       className={classes.experience}
       id="Experience"
@@ -17,7 +19,7 @@ const Experience = () => {
         transition={{ duration: 2, type: "spring" }}
         className={classes.achievement}
       >
-        <div className={classes.circle}>1+</div>
+        <div className={classes.circle}>2+</div>
         <span style={darkMode ? { color: "white" } : { color: "" }}>
           years{" "}
         </span>
@@ -37,6 +39,7 @@ const Experience = () => {
         </span>
         <span>work</span>
       </div>
+    </div>
     </div>
   );
 };

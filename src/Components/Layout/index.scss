@@ -1,0 +1,193 @@
+.top-tags {
+  bottom: auto;
+  top: 35px;
+}
+
+.tags {
+  // color: #ffd700;
+  // color: #ff4500; // red
+  color: #00ff7f; // green
+  opacity: 0.9;
+  position: absolute;
+  bottom: 0;
+  left: 120px;
+  font-size: 18px;
+  font-family: "La Belle Aurore", cursive;
+}
+
+.bottom-tag-html {
+  margin-left: -20px;
+}
+
+.main-app {
+  width: 100%;
+  will-change: contents;
+  height: 100%;
+  min-height: 566px;
+  position: relative;
+  opacity: 0;
+  top: 5%;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 6s forwards;
+  animation-delay: 1s;
+}
+
+.main-app .container.about-page,
+.container.skills-page {
+  .text-zone {
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    vertical-align: middle;
+    display: table-cell;
+    max-height: 90%;
+
+    h1 {
+      font-size: 53px;
+      font-family: "Coolvetica";
+      color: #00ff7f;
+      font-weight: 400;
+      margin-top: 0;
+      position: absolute;
+      margin-bottom: 40px;
+      left: -10px;
+
+      &:before {
+        content: "<h1>";
+        font-family: "La Belle Aurore", cursive;
+        color: #00ff7f;
+        font-size: 18px;
+        position: absolute;
+        margin-top: -10px;
+        left: -10px;
+        opacity: 0.6;
+        line-height: 18px;
+      }
+
+      &:after {
+        content: "<h1/>";
+        font-family: "La Belle Aurore", cursive;
+        color: #00ff7f;
+        font-size: 18px;
+        line-height: 18px;
+        position: absolute;
+        left: -30px;
+        bottom: -20px;
+        margin-left: 20px;
+        opacity: 0.6;
+      }
+    }
+
+    span {
+      font-size: 17px;
+      color: #8e1b1b;
+      font-family: sans-serif;
+      font-weight: 300;
+      max-width: fit-content;
+      animation: pulse 1s;
+      &:nth-of-type(1) {
+        animation-delay: 0.5s;
+      }
+      &:nth-of-type(2) {
+        animation-delay: 0.9s;
+      }
+      &:nth-of-type(3) {
+        animation-delay: 1.1s;
+      }
+    }
+  }
+
+  .text-animate-hover {
+    &:hover {
+      color: #0dcd3d;
+    }
+  }
+}
+
+// n is number of stars required
+@function multiple-box-shadow($n) {
+  $value: "#{random(5000)}px #{random(5000)}px #025aa2";
+  @for $i from 2 through $n {
+    $value: "#{$value} , #{random(5000)}px #{random(5000)}px #025aa2";
+  }
+  @return unquote($value);
+}
+
+$shadows-small: multiple-box-shadow(6400);
+$shadows-medium: multiple-box-shadow(500);
+$shadows-big: multiple-box-shadow(300);
+
+html {
+  height: 100%;
+  overflow: auto;
+}
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 50s linear infinite;
+  border-radius: 50px 50px;
+
+  &:after {
+    content: " ";
+    position: relative;
+    top: 20000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+    border-radius: 50px 50px;
+  }
+}
+#stars2 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation: animStar 100s linear infinite;
+  border-radius: 50px 50px;
+
+  &:after {
+    content: " ";
+    position: relative;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+    border-radius: 50px 50px;
+  }
+}
+#stars3 {
+  width: 2px;
+  height: 3px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation: animStar 150s linear infinite;
+  border-radius: 50px 50px;
+
+  &:after {
+    content: " ";
+    position: relative;
+    top: 2000px;
+    width: 3px;
+    height: 3px;
+    background: transparent;
+    box-shadow: $shadows-big;
+    border-radius: 50px 50px;
+  }
+}
+
+@keyframes animStar {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-2000px);
+  }
+}

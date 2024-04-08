@@ -12,6 +12,8 @@ const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
+    <div className="main-app">
+
     <div className={classes.portfolio} id="Portfolio">
       {/* heading */}
       <span style={darkMode ? { color: "white" } : { color: "" }}>
@@ -37,6 +39,7 @@ const Portfolio = () => {
           <img src={Hoc} alt=""></img>
         </SwiperSlide>
       </Swiper>
+    </div>
     </div>
   );
 };

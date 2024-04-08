@@ -4,7 +4,7 @@ import Togle from "../Togle/Togle";
 import { Link, Element } from "react-scroll";
 import MenuLine from "../../img/menu-line.png";
 import { useEffect, useState } from "react";
-
+import Layout from "../Layout";
 const NavBar = (props) => {
   const onClickHandler = () => {
     props.togleClick();
@@ -47,7 +47,7 @@ const NavBar = (props) => {
               </li>
               <li>
                 <Link spy={true} smooth={true} to="Services">
-                  Services
+                  Skills
                 </Link>
               </li>
               <li>
@@ -58,11 +58,6 @@ const NavBar = (props) => {
               <li>
                 <Link spy={true} smooth={true} to="Portfolio">
                   Portfolio
-                </Link>
-              </li>
-              <li>
-                <Link spy={true} smooth={true} to="Testimonial">
-                  Testimonial
                 </Link>
               </li>
             </ul>

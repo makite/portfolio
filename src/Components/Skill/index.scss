@@ -1,0 +1,22 @@
+.tagcloud-wrap {
+  // background: gray;
+  float: right;
+  width: 53%;
+  height: 115%;
+
+  .tagcloud {
+    color: #025aa2;
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+    margin: -10% auto;
+  }
+  .tagcloud--item:hover {
+    color: #f5c32c;
+  }
+}
+@media screen and (max-width: 480px) {
+  .tagcloud {
+    margin: 10%;
+  }
+}

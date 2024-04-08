@@ -10,7 +10,8 @@
   --orangeCard: rgba(252, 166, 31, 0.45);
   --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
 }
-
+@import "animate.css";
+@import "~loaders.css/src/animations/pacman.scss";
 .App {
   padding: 0.5rem 3.5rem;
   overflow: hidden;
@@ -46,6 +47,24 @@
   border: 1px solid var(--orange);
   color: var(--orange);
 }
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 2s 2s;
+  animation-fill-mode: forwards;
+}
+
 @media screen and (max-width: 480px) {
   .App {
     padding: 0.5rem 1rem;
