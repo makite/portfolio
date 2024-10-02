@@ -4,7 +4,6 @@ import Togle from "../Togle/Togle";
 import { Link, Element } from "react-scroll";
 import MenuLine from "../../img/menu-line.png";
 import { useEffect, useState } from "react";
-import Layout from "../Layout";
 const NavBar = (props) => {
   const onClickHandler = () => {
     props.togleClick();
